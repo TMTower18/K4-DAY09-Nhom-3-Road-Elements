@@ -1,5 +1,10 @@
 sample_id,split,tags,reason
-0756,calibration,edge_case,Biển tròn
-0959,calibration,edge_case,Biển tam giác bị cắt
-1979,calibration,edge_case,Biển hình chữ nhật
-0961,calibration,edge_case,Biển tam giác bị cắt
+0756,calibration,edge,Biển tròn
+0959,calibration,edge,Biển tam giác bị cắt
+1979,calibration,edge,Biển hình chữ nhật
+0961,calibration,edge,Biển tam giác bị cắt
+0824,example,edge,Ví dụ guideline
+GTS01,blind,normal,Nhiều biển báo giao thông rõ ràng
+GTS02,blind,edge;critical,Giao lộ có nhiều biển và tín hiệu giao thông
+GTS03,blind,edge,Giao lộ có biển giới hạn tốc độ và biển cảnh báo
+GTS04,blind,critical,Đường cao tốc có biển chỉ dẫn và nhiều biển quy định

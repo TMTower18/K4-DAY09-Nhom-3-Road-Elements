@@ -1,320 +1,85 @@
 [
   {
-    "name": "W.224 - Đường người đi bộ cắt ngang",
-    "color": "#F23C3C",
+    "name": "traffic_sign",
+    "color": "#ff7f0e",
     "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.205c - Đường giao nhau (ngã ba bên phải)",
-    "color": "#3C71F2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.102 - Cấm đi ngược chiều",
-    "color": "#A6F23C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "R.302a - Phải đi vòng sang bên phải",
-    "color": "#F23CDB",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.205a - Giao nhau với đường đồng cấp",
-    "color": "#3CF2D3",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.207 - Giao nhau với đường không ưu tiên",
-    "color": "#F29E3C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.201a - Chỗ ngoặt nguy hiểm vòng bên trái",
-    "color": "#693CF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.123a - Cấm rẽ trái",
-    "color": "#44F23C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "I.434a - Bến xe buýt",
-    "color": "#F23C79",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "R.303 - Nơi giao nhau chạy theo vòng xuyến",
-    "color": "#3CAEF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.130 - Cấm dừng và đỗ xe",
-    "color": "#E3F23C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "I.409 - Chỗ quay xe",
-    "color": "#CB3CF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "R.415a - Biển gộp làn đường theo phương tiện",
-    "color": "#3CF296",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.245a - Đi chậm",
-    "color": "#F2613C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.106a*Xe tải - Cấm xe tải",
-    "color": "#3C4CF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.203c - Đường bị thu hẹp về phía phải",
-    "color": "#81F23C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.117* - Giới hạn chiều cao",
-    "color": "#F23CB6",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.124a* - Cấm quay đầu",
-    "color": "#3CEBF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.107 - Cấm ô tô khách và ô tô tải",
-    "color": "#F2C33C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.124d - Cấm rẽ phải và quay đầu",
-    "color": "#8E3CF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.103a - Cấm ô tô",
-    "color": "#3CF259",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.203b - Đường bị thu hẹp về phía trái",
-    "color": "#F23C54",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.221b - Gồ giảm tốc phía trước",
-    "color": "#3C89F2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.111 - Cấm xe hai và ba bánh",
-    "color": "#BEF23C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.129 - Kiểm tra",
-    "color": "#F03CF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "S.505a*Xe máy - Chỉ dành cho xe máy",
-    "color": "#3CF2BB",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.246a - Chướng ngoại vật phía trước",
-    "color": "#F2863C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.225 - Trẻ em",
-    "color": "#513CF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "S.505a*Xe tải và công - Xe tải và xe công",
-    "color": "#5CF23C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.104 - Cấm mô tô và xe máy",
-    "color": "#F23C91",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "S.505a*Xe tải - Chỉ dành cho xe tải",
-    "color": "#3CC6F2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "Camera - Đường có camera giám sát",
-    "color": "#F2E83C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.123b - Cấm rẽ phải",
-    "color": "#B33CF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.202b - Nhiều chỗ ngoặt liên tiếp, chỗ đầu tiên sang phải",
-    "color": "#3CF27E",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "B.8a - Cấm xe sơ-mi rơ-moóc",
-    "color": "#F2493C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.137 - Cấm rẽ trái và phải",
-    "color": "#3C64F2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.139 - Cấm đi thẳng và rẽ phải",
-    "color": "#99F23C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.205b - Đường giao nhau (ngã ba bên trái)",
-    "color": "#F23CCE",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.127*50 - Giới hạn tốc độ (50km/h)",
-    "color": "#3CF2E0",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.127*60 - Giới hạn tốc độ (60km/h)",
-    "color": "#F2AB3C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.127*80 - Giới hạn tốc độ (80km/h)",
-    "color": "#763CF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.127*40 - Giới hạn tốc độ (40km/h)",
-    "color": "#3CF241",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "R.301e - Các xe chỉ được rẽ trái",
-    "color": "#F23C6C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.239b* - Chiều cao tĩnh không thực tế",
-    "color": "#3CA1F2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.233 - Nguy hiểm khác",
-    "color": "#D6F23C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "I.407a - Đường một chiều",
-    "color": "#D83CF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.131a - Cấm đỗ xe",
-    "color": "#3CF2A3",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.124b1 - Cấm ô tô quay đầu xe (được rẽ trái)",
-    "color": "#F26E3C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.210 - Giao nhau với đường sắt có rào chắn",
-    "color": "#3C3FF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "P.124c - Cấm rẽ trái và quay đầu xe",
-    "color": "#74F23C",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.201b - Chỗ ngoặt nguy hiểm vòng bên phải",
-    "color": "#F23CA9",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "W.246c - Chú ý chướng ngại vật – vòng tránh sang bên phải",
-    "color": "#3CDEF2",
-    "type": "rectangle",
-    "attributes": []
-  },
-  {
-    "name": "R.412 - Làn đường dành riêng cho từng loại xe",
-    "color": "#00BCD4",
-    "type": "rectangle",
-    "attributes": []
+    "attributes": [
+      {
+        "name": "family",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "regulatory",
+          "warning",
+          "mandatory",
+          "information",
+          "other",
+          "unknown"
+        ]
+      },
+      {
+        "name": "type",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "stop",
+          "yield",
+          "no_entry",
+          "speed_limit",
+          "other_regulatory",
+          "hazard_warning",
+          "other_warning",
+          "turn_direction",
+          "other_mandatory",
+          "direction",
+          "place_or_service",
+          "other_information",
+          "supplementary",
+          "other_sign",
+          "unknown"
+        ]
+      },
+      {
+        "name": "value",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "not_applicable",
+          "unreadable",
+          "other_readable",
+          "5",
+          "10",
+          "20",
+          "30",
+          "40",
+          "50",
+          "60",
+          "70",
+          "80",
+          "90",
+          "100",
+          "110",
+          "120"
+        ]
+      },
+      {
+        "name": "legibility",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "clear",
+          "partly_readable",
+          "unreadable"
+        ]
+      }
+    ]
   }
 ]
