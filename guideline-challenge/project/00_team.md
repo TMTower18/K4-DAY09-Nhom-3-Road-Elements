@@ -2,11 +2,11 @@
 
 Điền trước phút 15. Thay mọi placeholder; còn sót thì `make status` báo ở gate G1.
 
-- **Team:** TODO (ví dụ `team07`)
-- **Nhóm peer test bài của mình:** TODO (cặp A ↔ B; số nhóm lẻ thì ring 3 nhóm A → B → C → A — Lab Coach công bố)
-- **Nhóm mình test bài của:** TODO
-- **Problem family:** TODO (xem README mục "1 · Chọn bài toán")
-- **Nguồn ảnh:** TODO (`bdd100k`, `gtsdb`, `lisa` — chỉ dùng ảnh trong `data/`)
+- **Team:** team04
+- **Nhóm peer test bài của mình:** none
+- **Nhóm mình test bài của:** none
+- **Problem family:** Hierarchical Traffic Signs
+- **Nguồn ảnh:** images
 
 | Thành viên | GitHub | Vai trò chính | File phụ trách |
 |---|---|---|---|
