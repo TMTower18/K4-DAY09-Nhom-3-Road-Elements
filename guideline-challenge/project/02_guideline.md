@@ -71,13 +71,11 @@ Một **instance = một mặt biển vật lý** trong một ảnh, kể cả h
 | EX-01 | mặt biển STOP rõ, 30×30 px | 1 box; `regulatory/stop/not_applicable`, `legibility=clear` | §3–5 |
 | EX-02 | biển giới hạn 60 rõ | 1 box; `regulatory/speed_limit/60`, `legibility=clear` | §4–5 |
 | EX-03 | biển tốc độ, chữ số bị tán cây che | 1 box visible-only; `regulatory/speed_limit/unreadable`, `legibility=partly_readable`; ghi log nếu cần review | §3, §6 |
-| EX-04 | mặt biển chắc chắn, 7×8 px, nội dung không đọc | 1 box; `unknown/unknown/not_applicable`, `legibility=unreadable` | §3, §5 |
-| EX-05 | mặt biển chắc chắn, 5×9 px | IGNORE vì chiều rộng < 6 px | §3 |
-| EX-06 | biển thông tin bị cắt rìa, thấy chữ và mũi tên chỉ đường | 1 box clipped tại biên; `information/direction/not_applicable`; legibility theo phần đọc được | §3, §6 |
-| EX-07 | hai tấm biển trên cùng cột, thấy ranh giới riêng | 2 box, mỗi tấm attributes riêng | §2 |
-| EX-08 | bảng quảng cáo tròn đỏ không phải biển giao thông | IGNORE | §1, §5 |
-| EX-09 | giống biển nhưng vật che khiến không thể đặt box | tag ảnh `image_escalate` + log QA, không phỏng đoán box | §5, §7 |
-| EX-10 | mặt sau một biển chắc chắn, đủ lớn | 1 box; `unknown/unknown/not_applicable`, `legibility=unreadable` | §4, §6 |
+| EX-04 | biển thông tin bị cắt rìa, thấy chữ và mũi tên chỉ đường | 1 box clipped tại biên; `information/direction/not_applicable`; legibility theo phần đọc được | §3, §6 |
+| EX-05 | hai tấm biển trên cùng cột, thấy ranh giới riêng | 2 box, mỗi tấm attributes riêng | §2 |
+| EX-06 | bảng quảng cáo tròn đỏ không phải biển giao thông | IGNORE | §1, §5 |
+| EX-07 | giống biển nhưng vật che khiến không thể đặt box | tag ảnh `image_escalate` + log QA, không phỏng đoán box | §5, §7 |
+| EX-08 | mặt sau một biển chắc chắn, đủ lớn | 1 box; `unknown/unknown/not_applicable`, `legibility=unreadable` | §4, §6 |
 
 ## 10. Common mistakes + checklist
 
