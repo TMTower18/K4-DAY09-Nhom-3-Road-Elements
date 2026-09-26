@@ -25,13 +25,11 @@ Một **instance = một mặt biển vật lý** trong một ảnh, kể cả h
 
 | Attribute | Giá trị cho phép | Default | Ý nghĩa |
 |---|---|---|---|
-| `family` | `__undefined__`, `regulatory`, `warning`, `mandatory`, `information`, `other`, `unknown` | `__undefined__` | Nhóm chức năng **khi đọc rõ**, không suy từ hình dạng/màu đơn lẻ. `unknown` nếu chỉ biết chắc là biển. |
+| `family` | `__undefined__`, `regulatory`, `warning`, `mandatory`, `information`, `other`, `unknown` | `__undefined__` | Nhóm chức năng khi đọc rõ; không suy từ hình dạng/màu đơn lẻ. `unknown` nếu chỉ biết chắc là biển. |
 | `type` | `__undefined__`, `stop`, `yield`, `no_entry`, `speed_limit`, `other_regulatory`, `hazard_warning`, `other_warning`, `turn_direction`, `other_mandatory`, `direction`, `place_or_service`, `other_information`, `supplementary`, `other_sign`, `unknown` | `__undefined__` | Loại cụ thể hoặc nhóm con có chứng cứ; dùng `unknown` nếu không đủ đọc loại. |
-| `value` | `__undefined__`, `not_applicable`, `unreadable`, `other_readable`, `5`, `10`, `20`, `30`, `40`, `50`, `60`, `70`, `80`, `90`, `100`, `110`, `120` | `__undefined__` | Chỉ ghi **trị số tốc độ** cho `speed_limit` nếu đọc được toàn bộ. Giá trị đọc được ngoài danh sách: `other_readable` + escalate để QA mở rộng ontology trước freeze. `unreadable` cho speed limit thấy rõ loại nhưng không đọc được số; còn lại `not_applicable`. |
-| `visibility` | `__undefined__`, `full`, `occluded`, `truncated`, `occluded_and_truncated` | `__undefined__` | Che bởi vật thể và/hoặc cắt ở rìa ảnh; lóa/mờ không phải occlusion. |
-| `legibility` | `__undefined__`, `clear`, `partly_readable`, `unreadable` | `__undefined__` | Mức đọc nội dung trên mặt; không đồng nghĩa kích thước. |
-| `decision` | `__undefined__`, `label`, `unknown`, `escalate` | `__undefined__` | `unknown` khi phân loại dừng ở cấp trên hợp lệ, `escalate` khi cần QA; không dùng `ignore` trên box được vẽ. |
-| `review_reason` | `__undefined__`, `none`, `small_or_far`, `occluded`, `truncated`, `glare_or_blur`, `sign_vs_nonsign`, `hierarchy_conflict`, `geometry`, `other` | `__undefined__` | `none` nếu không escalate; nếu escalate chọn nguyên nhân chính. |
+| `value` | `__undefined__`, `not_applicable`, `unreadable`, `other_readable`, `5`, `10`, `20`, `30`, `40`, `50`, `60`, `70`, `80`, `90`, `100`, `110`, `120` | `__undefined__` | Chỉ ghi trị số tốc độ cho `speed_limit`; không đọc được số dùng `unreadable`; type khác dùng `not_applicable`. |
+| `legibility` | `__undefined__`, `clear`, `partly_readable`, `unreadable` | `__undefined__` | Mức độ đọc/nhận biết nội dung trên mặt biển. |
+
 
 **Ràng buộc taxonomy:**
 
