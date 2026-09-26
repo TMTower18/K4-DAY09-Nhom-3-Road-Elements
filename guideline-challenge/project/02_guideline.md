@@ -66,16 +66,13 @@ Một **instance = một mặt biển vật lý** trong một ảnh, kể cả h
 
 ## 9. Examples — tình huống minh họa, chưa phải sample của lab
 
-| Case giả định | Thấy gì | Expected output | Rule |
-|---|---|---|---|
-| EX-01 | mặt biển STOP rõ, 30×30 px | 1 box; `regulatory/stop/not_applicable`, `legibility=clear` | §3–5 |
-| EX-02 | biển giới hạn 60 rõ | 1 box; `regulatory/speed_limit/60`, `legibility=clear` | §4–5 |
-| EX-03 | biển tốc độ, chữ số bị tán cây che | 1 box visible-only; `regulatory/speed_limit/unreadable`, `legibility=partly_readable`; ghi log nếu cần review | §3, §6 |
-| EX-04 | biển thông tin bị cắt rìa, thấy chữ và mũi tên chỉ đường | 1 box clipped tại biên; `information/direction/not_applicable`; legibility theo phần đọc được | §3, §6 |
-| EX-05 | hai tấm biển trên cùng cột, thấy ranh giới riêng | 2 box, mỗi tấm attributes riêng | §2 |
-| EX-06 | bảng quảng cáo tròn đỏ không phải biển giao thông | IGNORE | §1, §5 |
-| EX-07 | giống biển nhưng vật che khiến không thể đặt box | tag ảnh `image_escalate` + log QA, không phỏng đoán box | §5, §7 |
-| EX-08 | mặt sau một biển chắc chắn, đủ lớn | 1 box; `unknown/unknown/not_applicable`, `legibility=unreadable` | §4, §6 |
+| Case giả định | Ảnh minh họa | Thấy gì | Expected output | Rule |
+|---|---|---|---|---|
+| EX-01 | ![EX-01](../../images/bien-nguoc-chieu.png) | mặt biển ngược chiều | 1 box; `regulatory/no_entry/not_applicable`, `legibility=clear` | §3–5 |
+| EX-02 | ![EX-02](../../images/bien_toc_do.png) | biển giới hạn 60 rõ | 1 box; `regulatory/speed_limit/60`, `legibility=clear` | §4–5 |
+| EX-03 | ![EX-03](../../images/bien_bi_cay_che.png) | biển bị tán cây che | 1 box visible-only; `legibility=partly_readable`; ghi log nếu cần review | §3, §6 |
+| EX-04 | ![EX-04](../../images/2_bien.png) | hai tấm biển trên cùng cột, thấy ranh giới riêng | 2 box, mỗi tấm attributes riêng | §2 |
+| EX-05 | ![EX-05](../../images/bien_tuyen_truyen.png) | bảng tuyên truyền về an toàn giao thông | 1 box; `information/other_information/not_applicable`, `legibility=clear` | §1, §5 |
 
 ## 10. Common mistakes + checklist
 
