@@ -1,1 +1,5 @@
 sample_id,split,tags,reason
+0756,calibration,edge_case,Biển tròn
+0959,calibration,edge_case,Biển tam giác bị cắt
+1979,calibration,edge_case,Biển hình chữ nhật
+0961,calibration,edge_case,Biển tam giác bị cắt

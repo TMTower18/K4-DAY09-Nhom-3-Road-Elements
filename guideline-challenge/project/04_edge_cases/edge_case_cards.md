@@ -14,14 +14,39 @@ File này là kho nội bộ của nhóm, **không gửi cho peer**. Card dùng 
 
 ---
 
-CASE ID: TODO
-Sample: TODO (sample_id)
-Scene: TODO
-Observation: TODO — thấy gì trong ảnh
-Decision: TODO — LABEL / IGNORE / UNKNOWN / ESCALATE
-Expected: TODO — class, attribute, geometry cụ thể
-Rationale: TODO — gắn với downstream contract ở `01_problem_statement.md`
-Common mistake: TODO
-Diversity: TODO — occlusion / small_far / ambiguity / conflict / critical / escalation / …
+CASE ID: 1
+Sample:  (sample_id)
+Scene: 0756
+Observation: Biển tròn 
+Decision: UNKNOWN — LABEL / IGNORE / UNKNOWN / ESCALATE
+Expected: Biển cấm — class, attribute, geometry cụ thể
+Rationale: Gán `unknown` cho các mức phân loại không đủ chứng cứ pixel (biển nhỏ/xa) thay vì đoán mò. Điều này tuân thủ nguyên tắc tránh gán nhầm nội dung cụ thể có thể gây failure nghiêm trọng cho hệ thống downstream, tuân thủ khoản 2 và 3 của Downstream contract ở `01_problem_statement.md`.
+Common mistake: Biển tròn 
+Diversity: small far— occlusion / small_far / ambiguity / conflict / critical / escalation / …
 
 ---
+Scene: 0959
+Observation: Biển tam giác bị cắt 
+Decision: IGNORE — LABEL / IGNORE / UNKNOWN / ESCALATE
+Expected: Biển cảnh báo — class, attribute, geometry cụ thể
+Rationale: Gán `unknown` cho các mức phân loại không đủ chứng cứ pixel (biển nhỏ/xa) thay vì đoán mò. Điều này tuân thủ nguyên tắc tránh gán nhầm nội dung cụ thể có thể gây failure nghiêm trọng cho hệ thống downstream, tuân thủ khoản 2 và 3 của Downstream contract ở `01_problem_statement.md`.
+Common mistake: Biển cảnh báo 
+Diversity: ambiguity— occlusion / small_far / ambiguity / conflict / critical / escalation / …
+
+Scene: 1979
+Observation: Biển hình chữ nhật 
+Decision: IGNORE — LABEL / IGNORE / UNKNOWN / ESCALATE
+Expected: Biển thông tin — class, attribute, geometry cụ thể
+Rationale: Gán `unknown` cho các mức phân loại không đủ chứng cứ pixel (biển nhỏ/xa) thay vì đoán mò. Điều này tuân thủ nguyên tắc tránh gán nhầm nội dung cụ thể có thể gây failure nghiêm trọng cho hệ thống downstream, tuân thủ khoản 2 và 3 của Downstream contract ở `01_problem_statement.md`.
+Common mistake: Biển hình chữ nhật 
+Diversity: ambiguity— occlusion / small_far / ambiguity / conflict / critical / escalation / …
+
+Scene: 0961
+Observation: Biển tam giác bị cắt 
+Decision: IGNORE — LABEL / IGNORE / UNKNOWN / ESCALATE
+Expected: Biển cảnh báo — class, attribute, geometry cụ thể
+Rationale: Gán `unknown` cho các mức phân loại không đủ chứng cứ pixel (biển nhỏ/xa) thay vì đoán mò. Điều này tuân thủ nguyên tắc tránh gán nhầm nội dung cụ thể có thể gây failure nghiêm trọng cho hệ thống downstream, tuân thủ khoản 2 và 3 của Downstream contract ở `01_problem_statement.md`.
+Common mistake: Biển tam giác 
+Diversity: ambiguity— occlusion / small_far / ambiguity / conflict / critical / escalation / …
+
+ 
