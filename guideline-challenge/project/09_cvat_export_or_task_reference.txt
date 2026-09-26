@@ -1,8 +1,15 @@
-CVAT task reference — thay mọi placeholder mới là xong.
+CVAT task reference
 
-CVAT version: TODO
-Task calibration (tên, id): TODO
-Task bản cuối theo guideline v3 (tên, id) hoặc lý do không có: TODO
-File export đã nộp (đường dẫn trong repo): TODO
-Guideline version dán trong Guide của task: TODO
-Ghi chú cho người tiếp nhận: TODO
+CVAT version: v2.76.0
+
+Task calibration (tên, id): calibration samples: 0756, 0959, 1979, 0961.
+
+Task bản cuối theo guideline v3 (tên, id) hoặc lý do không có:
+Không có — nhóm chưa thực hiện blind handoff/kiểm chéo với nhóm peer nên chưa có Guideline v3 và chưa tạo task bản cuối theo v3.
+
+File export đã nộp (đường dẫn trong repo): DAY09/annotations.xml
+
+Guideline version dán trong Guide của task: v2
+
+Ghi chú cho người tiếp nhận:
+File export hiện tại nằm tại DAY09/annotations.xml và sử dụng Guideline v2. Guideline v3 chưa được tạo do nhóm chưa thực hiện blind handoff và chưa nhận peer feedback. Sau khi hoàn thành blind test, nhóm sẽ cập nhật Guideline v3 và task/export cuối nếu có.

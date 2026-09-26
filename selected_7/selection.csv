@@ -1,0 +1,8 @@
+image,tags,n_boxes,labels,reason
+0338.jpg,normal,2,P.123a; I.434a,"P.123a + I.434a (bus stop), biển rõ, cỡ trung"
+0664.jpg,normal,2,P.130; P.103a,"P.130 + P.103a, 2 biển cấm tách rời, rõ nét"
+0824.jpg,normal,2,P.102; R.302a,P.102 + R.302a xếp chồng trên cùng cột
+0959.jpg,normal,1,W.224,"W.224 người đi bộ, 1 biển lớn rõ"
+1979.jpg,normal,1,P.111,"P.111 biển cấm lớn, gần camera"
+0756.jpg,edge;small_far;conflict,12,P.127*40; P.127*60; P.130; P.111; P.131a; P.129; Camera; W.221b; P.106a*Xe tải; W.239b*; W.221b; W.221b,"12 biển / 10 class trên giàn + lề đường: dày đặc, nhiều biển nhỏ xa, dễ sót và nhầm class"
+0961.jpg,edge;small_far,3,W.245a; W.246a; P.130,"3 biển rất nhỏ ở xa (diện tích box ~0.008% ảnh), khó nhìn và khó đặt box"

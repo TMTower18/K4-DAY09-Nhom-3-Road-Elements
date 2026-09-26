@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>15</id>
+      <size>7</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-09-26 04:00:18.831427+00:00</created>
+      <updated>2026-09-26 05:03:29.815180+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>6</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>15</id>
+          <start>0</start>
+          <stop>6</stop>
+          <url>http://localhost:8080/api/jobs/15/dataset/export/api/jobs/15</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>phucthoc205</username>
+        <email>phucthoc205@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>traffic_sign</name>
+          <color>#E53935</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>family</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>__undefined__</default_value>
+              <values>__undefined__
+regulatory
+warning
+mandatory
+information
+other
+unknown</values>
+            </attribute>
+            <attribute>
+              <name>type</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>__undefined__</default_value>
+              <values>__undefined__
+stop
+yield
+no_entry
+speed_limit
+other_regulatory
+hazard_warning
+other_warning
+turn_direction
+other_mandatory
+direction
+place_or_service
+other_information
+supplementary
+other_sign
+unknown</values>
+            </attribute>
+            <attribute>
+              <name>value</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>__undefined__</default_value>
+              <values>__undefined__
+not_applicable
+unreadable
+other_readable
+5
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120</values>
+            </attribute>
+            <attribute>
+              <name>legibility</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>__undefined__</default_value>
+              <values>__undefined__
+clear
+partly_readable
+unreadable</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>image_escalate</name>
+          <color>#8E24AA</color>
+          <type>tag</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-09-26 05:16:28.429394+00:00</dumped>
+  </meta>
+  <image id="0" name="0338.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="735.20" ytl="31.34" xbr="826.70" ybr="157.67" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">place_or_service</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="519.60" ytl="235.29" xbr="580.35" ybr="294.95" z_order="0">
+      <attribute name="family">regulatory</attribute>
+      <attribute name="type">no_entry</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+  </image>
+  <image id="1" name="0664.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="629.34" ytl="102.49" xbr="688.88" ybr="163.48" z_order="0">
+      <attribute name="family">regulatory</attribute>
+      <attribute name="type">no_entry</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="135.60" ytl="125.70" xbr="199.50" ybr="185.27" z_order="0">
+      <attribute name="family">regulatory</attribute>
+      <attribute name="type">other_regulatory</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+  </image>
+  <image id="2" name="0756.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="394.82" ytl="123.08" xbr="444.40" ybr="187.56" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">other_information</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="570.74" ytl="131.40" xbr="618.02" ybr="194.32" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">other_information</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="547.21" ytl="265.71" xbr="571.27" ybr="286.64" z_order="0">
+      <attribute name="family">unknown</attribute>
+      <attribute name="type">unknown</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">partly_readable</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="547.35" ytl="289.30" xbr="568.36" ybr="308.94" z_order="0">
+      <attribute name="family">regulatory</attribute>
+      <attribute name="type">other_regulatory</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">partly_readable</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="757.97" ytl="317.55" xbr="793.99" ybr="354.75" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">other_information</attribute>
+      <attribute name="value">__undefined__</attribute>
+      <attribute name="legibility">__undefined__</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="306.14" ytl="153.29" xbr="336.06" ybr="184.26" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">supplementary</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="351.81" ytl="155.39" xbr="383.83" ybr="186.36" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">supplementary</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="1" xtl="823.17" ytl="283.47" xbr="877.76" ybr="326.51" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">other_information</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="828.42" ytl="259.85" xbr="876.19" ybr="280.84" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">supplementary</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="827.90" ytl="212.61" xbr="877.76" ybr="257.22" z_order="0">
+      <attribute name="family">regulatory</attribute>
+      <attribute name="type">other_regulatory</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="913.05" ytl="269.89" xbr="957.06" ybr="297.11" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">other_information</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">partly_readable</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="881.29" ytl="215.90" xbr="940.72" ybr="267.17" z_order="0">
+      <attribute name="family">warning</attribute>
+      <attribute name="type">hazard_warning</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="762.20" ytl="289.06" xbr="791.65" ybr="316.85" z_order="0">
+      <attribute name="family">warning</attribute>
+      <attribute name="type">hazard_warning</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="694.79" ytl="357.45" xbr="713.83" ybr="375.02" z_order="0">
+      <attribute name="family">regulatory</attribute>
+      <attribute name="type">other_regulatory</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">partly_readable</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="637.20" ytl="114.64" xbr="728.63" ybr="209.33" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">other_information</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="696.55" ytl="339.29" xbr="714.12" ybr="356.27" z_order="0">
+      <attribute name="family">unknown</attribute>
+      <attribute name="type">unknown</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">unreadable</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="252.09" ytl="118.26" xbr="298.70" ybr="183.02" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">other_information</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="304.55" ytl="112.14" xbr="341.67" ybr="150.83" z_order="0">
+      <attribute name="family">warning</attribute>
+      <attribute name="type">speed_limit</attribute>
+      <attribute name="value">40</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="349.49" ytl="116.00" xbr="387.00" ybr="153.20" z_order="0">
+      <attribute name="family">warning</attribute>
+      <attribute name="type">speed_limit</attribute>
+      <attribute name="value">60</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+  </image>
+  <image id="3" name="0824.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="542.61" ytl="200.08" xbr="586.15" ybr="243.62" z_order="0">
+      <attribute name="family">mandatory</attribute>
+      <attribute name="type">turn_direction</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="539.35" ytl="156.54" xbr="583.40" ybr="197.90" z_order="0">
+      <attribute name="family">regulatory</attribute>
+      <attribute name="type">no_entry</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+  </image>
+  <image id="4" name="0959.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="601.40" ytl="38.44" xbr="713.97" ybr="132.44" z_order="0">
+      <attribute name="family">warning</attribute>
+      <attribute name="type">other_warning</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+  </image>
+  <image id="5" name="0961.jpg" width="960" height="540">
+  </image>
+  <image id="6" name="1979.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="222.09" ytl="40.01" xbr="332.19" ybr="135.34" z_order="0">
+      <attribute name="family">regulatory</attribute>
+      <attribute name="type">other_regulatory</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="236.19" ytl="136.73" xbr="312.78" ybr="173.87" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">supplementary</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="753.52" ytl="130.50" xbr="888.95" ybr="188.15" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">other_information</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">clear</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="1" xtl="870.77" ytl="207.18" xbr="923.22" ybr="270.12" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">other_information</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">partly_readable</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="605.80" ytl="272.75" xbr="624.22" ybr="294.61" z_order="0">
+      <attribute name="family">information</attribute>
+      <attribute name="type">unknown</attribute>
+      <attribute name="value">not_applicable</attribute>
+      <attribute name="legibility">unreadable</attribute>
+    </box>
+  </image>
+</annotations>
