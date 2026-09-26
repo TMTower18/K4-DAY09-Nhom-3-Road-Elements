@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <image id="0" name="0338.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="520.00" ytl="234.00" xbr="581.00" ybr="292.00" z_order="0">
+      <attribute name="sign_type">P.123a - Cấm rẽ trái</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="736.00" ytl="31.00" xbr="825.00" ybr="159.00" z_order="0">
+      <attribute name="sign_type">I.434a - Bến xe buýt</attribute>
+    </box>
+  </image>
+  <image id="1" name="0664.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="135.00" ytl="123.00" xbr="197.00" ybr="185.00" z_order="0">
+      <attribute name="sign_type">P.130 - Cấm dừng và đỗ xe</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="631.00" ytl="103.00" xbr="690.00" ybr="164.00" z_order="0">
+      <attribute name="sign_type">P.103a - Cấm ô tô</attribute>
+    </box>
+  </image>
+  <image id="2" name="0756.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="305.00" ytl="114.00" xbr="343.00" ybr="150.00" z_order="0">
+      <attribute name="sign_type">P.127*40 - Giới hạn tốc độ (40km/h)</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="351.00" ytl="116.00" xbr="389.00" ybr="153.00" z_order="0">
+      <attribute name="sign_type">P.127*60 - Giới hạn tốc độ (60km/h)</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="548.00" ytl="266.00" xbr="570.00" ybr="287.00" z_order="0">
+      <attribute name="sign_type">P.130 - Cấm dừng và đỗ xe</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="548.00" ytl="289.00" xbr="569.00" ybr="310.00" z_order="0">
+      <attribute name="sign_type">P.111 - Cấm xe hai và ba bánh</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="696.00" ytl="338.00" xbr="715.00" ybr="357.00" z_order="0">
+      <attribute name="sign_type">P.131a - Cấm đỗ xe</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="696.00" ytl="358.00" xbr="714.00" ybr="374.00" z_order="0">
+      <attribute name="sign_type">P.129 - Kiểm tra</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="737.00" ytl="307.00" xbr="760.00" ybr="341.00" z_order="0">
+      <attribute name="sign_type">Camera - Đường có camera giám sát</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="762.00" ytl="289.00" xbr="792.00" ybr="315.00" z_order="0">
+      <attribute name="sign_type">W.221b - Gồ giảm tốc phía trước</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="830.00" ytl="212.00" xbr="878.00" ybr="259.00" z_order="0">
+      <attribute name="sign_type">P.106a*Xe tải - Cấm xe tải</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="881.00" ytl="217.00" xbr="940.00" ybr="267.00" z_order="0">
+      <attribute name="sign_type">W.239b* - Chiều cao tĩnh không thực tế</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="684.00" ytl="338.00" xbr="696.00" ybr="352.00" z_order="0">
+      <attribute name="sign_type">W.221b - Gồ giảm tốc phía trước</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="152.00" ytl="250.00" xbr="181.00" ybr="277.00" z_order="0">
+      <attribute name="sign_type">W.221b - Gồ giảm tốc phía trước</attribute>
+    </box>
+  </image>
+  <image id="3" name="0824.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="539.00" ytl="156.00" xbr="589.00" ybr="201.00" z_order="0">
+      <attribute name="sign_type">P.102 - Cấm đi ngược chiều</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="534.00" ytl="201.00" xbr="592.00" ybr="245.00" z_order="0">
+      <attribute name="sign_type">R.302a - Phải đi vòng sang bên phải</attribute>
+    </box>
+  </image>
+  <image id="4" name="0959.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="606.00" ytl="36.00" xbr="710.00" ybr="132.00" z_order="0">
+      <attribute name="sign_type">W.224 - Đường người đi bộ cắt ngang</attribute>
+    </box>
+  </image>
+  <image id="5" name="0961.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="241.00" ytl="196.00" xbr="255.00" ybr="208.00" z_order="0">
+      <attribute name="sign_type">W.245a - Đi chậm</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="242.00" ytl="208.00" xbr="255.00" ybr="220.00" z_order="0">
+      <attribute name="sign_type">W.246a - Chướng ngoại vật phía trước</attribute>
+    </box>
+    <box label="traffic_sign" source="manual" occluded="0" xtl="168.00" ytl="221.00" xbr="176.00" ybr="226.00" z_order="0">
+      <attribute name="sign_type">P.130 - Cấm dừng và đỗ xe</attribute>
+    </box>
+  </image>
+  <image id="6" name="1979.jpg" width="960" height="540">
+    <box label="traffic_sign" source="manual" occluded="0" xtl="230.14" ytl="38.96" xbr="324.16" ybr="134.31" z_order="0">
+      <attribute name="sign_type">P.111 - Cấm xe hai và ba bánh</attribute>
+    </box>
+  </image>
+</annotations>

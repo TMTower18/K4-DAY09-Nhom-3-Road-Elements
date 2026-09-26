@@ -1,0 +1,11 @@
+issue_id,sample_id,object,severity,defect,annotator,found_by,status,resolution
+QA-001,0756,"tấm đỏ (758,318,794,355)",Major,value và legibility còn __undefined__ — §4: phải hoàn thành trước export,phucthoc205,long,open,
+QA-002,0756,"biển tròn số 40 (305,112,342,151)",Major,"family=warning cho speed_limit — §4 định nghĩa regulatory là biển quy định/hạn chế, warning là cảnh báo nguy hiểm",phucthoc205,long,open,
+QA-003,0756,"biển tròn số 60 (349,116,387,153)",Major,family=warning cho speed_limit — như trên,phucthoc205,long,open,
+QA-004,1979,"biển xanh chữ địa danh + mũi tên (871,207,923,270)",Major,type=other_information — §1: bảng chỉ hướng có chữ địa danh gán information/direction,phucthoc205,long,open,
+QA-005,0756,"bảng xanh chỉ có tên đường (913,270,957,297)",Major,box thừa — §1 loại trừ bảng tên đường chỉ là tên phố không có chỉ dẫn giao thông,phucthoc205,long,open,
+QA-006,0338; 0664,"biển tròn đỏ cấm rẽ trái (520,235,580,295); biển tròn đỏ cấm ô tô (629,102,689,163)",Question,"gán no_entry. Định nghĩa no_entry ở §4 (""cấm phương tiện đi vào theo hướng được kiểm soát"") đủ rộng để bao cả biển cấm loại xe/cấm rẽ → guideline_gap: cần giới hạn no_entry",phucthoc205,long,open,
+QA-007,0756; 1979,4 tấm phụ gán information/supplementary,Question,guideline không còn bảng ràng buộc family→type; chỉ định nghĩa other_sign ngầm cho thấy supplementary thuộc other → guideline_gap: khôi phục bảng ràng buộc,phucthoc205,long,open,
+QA-008,0959,"biển tam giác người đi bộ (601,38,714,132)",Question,type=other_warning; §4 chỉ có một type warning cụ thể (hazard_warning) nên ranh giới hazard_warning/other_warning chưa rõ,phucthoc205,long,open,
+QA-009,0756; 1979,"biển làn theo loại xe trên giàn (3 biển 0756, 1 biển gộp làn 1979)",Question,gán information/other_information; §4 chưa nói biển làn dành cho loại xe là mandatory hay information,phucthoc205,long,open,
+QA-010,0756,"bảng chữ tuyên truyền trên giàn (637,115,729,209)",Question,đã vẽ box; §1 không liệt kê bảng tuyên truyền trong danh sách loại trừ,phucthoc205,long,open,

@@ -1,1 +1,91 @@
-[]
+[
+  {
+    "name": "traffic_sign",
+    "color": "#E53935",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "family",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "regulatory",
+          "warning",
+          "mandatory",
+          "information",
+          "other",
+          "unknown"
+        ]
+      },
+      {
+        "name": "type",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "stop",
+          "yield",
+          "no_entry",
+          "speed_limit",
+          "other_regulatory",
+          "hazard_warning",
+          "other_warning",
+          "turn_direction",
+          "other_mandatory",
+          "direction",
+          "place_or_service",
+          "other_information",
+          "supplementary",
+          "other_sign",
+          "unknown"
+        ]
+      },
+      {
+        "name": "value",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "not_applicable",
+          "unreadable",
+          "other_readable",
+          "5",
+          "10",
+          "20",
+          "30",
+          "40",
+          "50",
+          "60",
+          "70",
+          "80",
+          "90",
+          "100",
+          "110",
+          "120"
+        ]
+      },
+      {
+        "name": "legibility",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "__undefined__",
+        "values": [
+          "__undefined__",
+          "clear",
+          "partly_readable",
+          "unreadable"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "image_escalate",
+    "color": "#8E24AA",
+    "type": "tag",
+    "attributes": []
+  }
+]
