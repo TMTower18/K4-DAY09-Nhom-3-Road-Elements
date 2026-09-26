@@ -30,17 +30,6 @@ Một **instance = một mặt biển vật lý** trong một ảnh, kể cả h
 | `value` | `__undefined__`, `not_applicable`, `unreadable`, `other_readable`, `5`, `10`, `20`, `30`, `40`, `50`, `60`, `70`, `80`, `90`, `100`, `110`, `120` | `__undefined__` | Chỉ ghi **trị số tốc độ** cho `speed_limit` nếu đọc được toàn bộ. Giá trị đọc được ngoài danh sách: `other_readable` + escalate để QA mở rộng ontology trước freeze. `unreadable` cho speed limit thấy rõ loại nhưng không đọc được số; còn lại `not_applicable`. |
 | `legibility` | `__undefined__`, `clear`, `partly_readable`, `unreadable` | `__undefined__` | Mức đọc nội dung trên mặt; không đồng nghĩa kích thước. |
 
-**Ràng buộc taxonomy:**
-
-| `family` | `type` được phép | `value` |
-|---|---|---|
-| `regulatory` | `stop`, `yield`, `no_entry`, `speed_limit`, `other_regulatory`, `unknown` | `speed_limit`: số đọc đủ / `unreadable` / `other_readable`; các type khác: `not_applicable` |
-| `warning` | `hazard_warning`, `other_warning`, `unknown` | `not_applicable` |
-| `mandatory` | `turn_direction`, `other_mandatory`, `unknown` | `not_applicable` |
-| `information` | `direction`, `place_or_service`, `other_information`, `unknown` | `not_applicable` |
-| `other` | `supplementary`, `other_sign`, `unknown` | `not_applicable` |
-| `unknown` | `unknown` | `not_applicable` |
-
 `other_*` nghĩa là **biết chắc họ type/family nhưng không thuộc các loại kể tên**. `unknown` nghĩa là **không đủ chứng cứ để biết**. Màu/hình tam giác, tròn, chữ nhật là gợi ý tìm biển, **không tự đủ để xác định family** vì quy ước các nước và mặt sau có thể khác. `hazard_warning` chỉ khi thấy rõ nội dung cảnh báo; không tự điền chỉ vì tam giác. `turn_direction` chỉ khi thấy mũi tên/chỉ dẫn bắt buộc; `direction` là biển chỉ đường thông tin. `place_or_service` cho tên địa điểm/dịch vụ trên biển giao thông. `other_readable` cần QA ghi số thực trong log; không âm thầm chuyển thành một số có trong menu.
 
 ## 5. Inclusion / exclusion — cây quyết định
@@ -76,8 +65,6 @@ Một **instance = một mặt biển vật lý** trong một ảnh, kể cả h
 **Không áp dụng — task ảnh tĩnh.** Mỗi ảnh là độc lập; không nối track, không suy nội dung biển từ ảnh liền kề hoặc ground truth nguồn. Nếu đổi sang clip video, phải thiết kế lại temporal rule, ontology mutable và export; bản guideline này không áp dụng tự động.
 
 ## 9. Examples — tình huống minh họa, chưa phải sample của lab
-
-`sample_pack.csv` hiện chỉ có header, nên chưa có `sample_id` thật. **Trước calibration:** gắn các mã `example`/`calibration` có thật, thêm ảnh thật và expected box. **Không dùng ảnh blind làm ví dụ.** Các dòng sau là case mô tả để thống nhất cách ra quyết định, không là evidence đã quan sát.
 
 | Case giả định | Thấy gì | Expected output | Rule |
 |---|---|---|---|
