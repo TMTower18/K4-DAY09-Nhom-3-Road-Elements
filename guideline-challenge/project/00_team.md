@@ -2,7 +2,7 @@
 
 Điền trước phút 15. Thay mọi placeholder; còn sót thì `make status` báo ở gate G1.
 
-- **Team:** team04
+- **Team:** team03
 - **Nhóm peer test bài của mình:** none
 - **Nhóm mình test bài của:** none
 - **Problem family:** Hierarchical Traffic Signs
