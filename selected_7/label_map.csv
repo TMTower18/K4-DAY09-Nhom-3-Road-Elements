@@ -1,0 +1,53 @@
+id,cvat_name,english,vietnamese
+0,W.224,Pedestrian Crossing,Đường người đi bộ cắt ngang
+1,W.205c,Equal-level Intersection,Đường giao nhau (ngã ba bên phải)
+2,P.102,No Entry,Cấm đi ngược chiều
+3,R.302a,Right Turn Only,Phải đi vòng sang bên phải
+4,W.205a,Intersection,Giao nhau với đường đồng cấp
+5,W.207,Intersection with a non-priority road,Giao nhau với đường không ưu tiên
+6,W.201a,Danger zone on the left,Chỗ ngoặt nguy hiểm vòng bên trái
+7,P.123a,No Left Turn,Cấm rẽ trái
+8,I.434a,Bus Stop,Bến xe buýt
+9,R.303,Roundabout,Nơi giao nhau chạy theo vòng xuyến
+10,P.130,No Stopping and No Parking,Cấm dừng và đỗ xe
+11,I.409,U-Turn Allowed,Chỗ quay xe
+12,R.415a,Lane Allocation,Biển gộp làn đường theo phương tiện
+13,W.245a,Slow Down,Đi chậm
+14,P.106a*Xe tải,No Trucks Allowed,Cấm xe tải
+15,W.203c,Narrow Road on the Right,Đường bị thu hẹp về phía phải
+16,P.117*,Height Limit,Giới hạn chiều cao
+17,P.124a*,No U-Turn,Cấm quay đầu
+18,P.107,No Passenger Cars and Trucks,Cấm ô tô khách và ô tô tải
+19,P.124d,No U-Turn and No Right Turn,Cấm rẽ phải và quay đầu
+20,P.103a,No Cars Allowed,Cấm ô tô
+21,W.203b,Narrow Road on the Left,Đường bị thu hẹp về phía trái
+22,W.221b,Uneven Road,Gồ giảm tốc phía trước
+23,P.111,No Two or Three-wheeled Vehicles,Cấm xe hai và ba bánh
+24,P.129,Customs Checkpoint,Kiểm tra
+25,S.505a*Xe máy,Motorcycles Only,Chỉ dành cho xe máy*
+26,W.246a,Obstacle on the Road,Chướng ngoại vật phía trước
+27,W.225,Children Present,Trẻ em
+28,S.505a*Xe tải và công,Trucks and Containers,Xe tải và xe công*
+29,P.104,No Motorcycles Allowed,Cấm mô tô và xe máy
+30,S.505a*Xe tải,Trucks Only,Chỉ dành cho xe tải*
+31,Camera,Road with Surveillance Camera,Đường có camera giám sát
+32,P.123b,No Right Turn,Cấm rẽ phải
+33,W.202b,Double curve first to right,"Nhiều chỗ ngoặt nguy hiểm liên tiếp, chỗ đầu tiên sang phải"
+34,B.8a,No Containers Allowed,Cấm xe sơ-mi rơ-moóc
+35,P.137,No Left or Right Turn,Cấm rẽ trái và phải
+36,P.139,No Straight and Right Turn,Cấm đi thẳng và rẽ phải
+37,W.205b,Intersection with T-Junction,Đường giao nhau (ngã ba bên trái)
+38,P.127*50,Speed limit (50km/h),Giới hạn tốc độ (50km/h)
+39,P.127*60,Speed limit (60km/h),Giới hạn tốc độ (60km/h)
+40,P.127*80,Speed limit (80km/h),Giới hạn tốc độ (80km/h)
+41,P.127*40,Speed limit (40km/h),Giới hạn tốc độ (40km/h)
+42,R.301e,Left Turn,Các xe chỉ được rẽ trái
+43,W.239b*,Low Clearance,Chiều cao tĩnh không thực tế
+44,W.233,Other Danger,Nguy hiểm khác
+45,I.407a,One-way street,Đường một chiều
+46,P.131a,No Parking,Cấm đỗ xe
+47,P.124b1,No U-Turn for Cars,Cấm ô tô quay đầu xe (được rẽ trái)
+48,W.210,Level Crossing with Barriers,Giao nhau với đường sắt có rào chắn
+49,P.124c,No U-Turn and No Left Turn,Cấm rẽ trái và quay đầu xe
+50,W.201b,Danger zone on the right,Chỗ ngoặt nguy hiểm vòng bên phải
+51,W.246c,Warning: Obstacle ahead – pass on the right,Chú ý chướng ngại vật – vòng tránh sang bên phải
