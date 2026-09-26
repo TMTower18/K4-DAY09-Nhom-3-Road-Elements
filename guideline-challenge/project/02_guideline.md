@@ -21,7 +21,7 @@ Một **instance = một mặt biển vật lý** trong một ảnh, kể cả h
 
 ## 4. Taxonomy và attributes
 
-**Schema triển khai đề xuất cho Long:** đúng **một CVAT label hình chữ nhật tên `traffic_sign`**, với các select attributes bất biến ở task ảnh tĩnh dưới đây. Phân cấp lưu bằng attributes, không tạo hàng chục label con. Có thêm **một tag ảnh** `image_escalate` cho nghi vấn không thể đặt box. `03_ontology_and_cvat_setup.md` là source of truth; Long phải đồng bộ `03_cvat_labels.json` *trước* tạo task, nếu tên/giá trị khác thì sửa hai bên và guideline đồng thời, không bắt peer tự dịch schema. Không dùng checkbox `needs_review` làm nguồn duy nhất nếu không có lý do.
+**Schema triển khai đề xuất như sau:** đúng **một CVAT label hình chữ nhật tên `traffic_sign`**, với các select attributes bất biến ở task ảnh tĩnh dưới đây. Phân cấp lưu bằng attributes, không tạo hàng chục label con. Có thêm **một tag ảnh** `image_escalate` cho nghi vấn không thể đặt box. `03_ontology_and_cvat_setup.md` là source of truth; Long phải đồng bộ `03_cvat_labels.json` *trước* tạo task, nếu tên/giá trị khác thì sửa hai bên và guideline đồng thời, không bắt peer tự dịch schema. Không dùng checkbox `needs_review` làm nguồn duy nhất nếu không có lý do.
 
 | Attribute | Giá trị cho phép | Default | Ý nghĩa |
 |---|---|---|---|
@@ -115,3 +115,103 @@ Một **instance = một mặt biển vật lý** trong một ảnh, kể cả h
 - CVAT, *CVAT for image* — hỗ trợ boxes, tags và attributes trong native export: https://docs.cvat.ai/docs/dataset_management/formats/format-cvat/
 
 **Ghi chú:** Các tài liệu trên là cơ sở chọn bài toán và format. Taxonomy rút gọn, ngưỡng 6 px, quy tắc dừng ở `unknown`, giới hạn box và thứ tự escalation do nhóm đề xuất để calibration/peer test; không quy chúng cho dataset gốc hoặc tiêu chuẩn pháp luật. Cần kiểm ảnh trong `data/`, thống nhất với CVAT owner và điều chỉnh v2 bằng bằng chứng bất đồng thật.
+
+### Chú thích từng giá trị
+
+#### `family`
+
+| Giá trị | Chú thích |
+|---|---|
+| `__undefined__` | Chưa xác định hoặc chưa gán nhóm chức năng của biển. |
+| `regulatory` | Biển quy định, cấm hoặc hạn chế hành vi giao thông. |
+| `warning` | Biển cảnh báo nguy hiểm hoặc điều kiện cần chú ý phía trước. |
+| `mandatory` | Biển đưa ra hiệu lệnh bắt buộc phải thực hiện. |
+| `information` | Biển cung cấp thông tin, chỉ đường, địa điểm hoặc dịch vụ. |
+| `other` | Biết chắc là biển giao thông nhưng chức năng không thuộc các nhóm đã liệt kê. |
+| `unknown` | Biết chắc là biển giao thông nhưng không đủ chứng cứ để xác định `family`. |
+
+#### `type`
+
+| Giá trị | Chú thích |
+|---|---|
+| `__undefined__` | Chưa xác định hoặc chưa gán loại biển. |
+| `stop` | Biển yêu cầu phương tiện dừng lại. |
+| `yield` | Biển yêu cầu phương tiện nhường đường. |
+| `no_entry` | Biển cấm phương tiện đi vào theo hướng được kiểm soát. |
+| `speed_limit` | Biển quy định giới hạn tốc độ bằng trị số. |
+| `other_regulatory` | Biết chắc thuộc `regulatory` nhưng không phải các loại regulatory đã liệt kê. |
+| `hazard_warning` | Biển cảnh báo một nguy hiểm hoặc điều kiện nguy hiểm cụ thể. |
+| `other_warning` | Biết chắc thuộc `warning` nhưng không phù hợp loại warning đã liệt kê. |
+| `turn_direction` | Biển bắt buộc phương tiện đi theo hướng nhất định như trái, phải hoặc thẳng. |
+| `other_mandatory` | Biết chắc thuộc `mandatory` nhưng không phải `turn_direction`. |
+| `direction` | Biển cung cấp thông tin chỉ hướng hoặc chỉ đường, không mang tính bắt buộc. |
+| `place_or_service` | Biển cung cấp thông tin về địa điểm hoặc dịch vụ. |
+| `other_information` | Biết chắc thuộc `information` nhưng không thuộc các type information đã liệt kê. |
+| `supplementary` | Biển phụ cung cấp thông tin bổ sung cho biển chính. |
+| `other_sign` | Biết chắc thuộc `family=other` nhưng không phải `supplementary`. |
+| `unknown` | Biết chắc là biển nhưng không đủ chứng cứ để xác định `type`. |
+
+#### `value`
+
+| Giá trị | Chú thích |
+|---|---|
+| `__undefined__` | Chưa xác định hoặc chưa gán giá trị. |
+| `not_applicable` | Không áp dụng trị số tốc độ cho biển này. |
+| `unreadable` | Xác định được là `speed_limit` nhưng không đọc chắc chắn được trị số. |
+| `other_readable` | Đọc rõ trị số tốc độ nhưng trị số đó chưa có trong ontology; cần QA kiểm tra. |
+| `5` | Đọc chắc chắn giới hạn tốc độ là 5. |
+| `10` | Đọc chắc chắn giới hạn tốc độ là 10. |
+| `20` | Đọc chắc chắn giới hạn tốc độ là 20. |
+| `30` | Đọc chắc chắn giới hạn tốc độ là 30. |
+| `40` | Đọc chắc chắn giới hạn tốc độ là 40. |
+| `50` | Đọc chắc chắn giới hạn tốc độ là 50. |
+| `60` | Đọc chắc chắn giới hạn tốc độ là 60. |
+| `70` | Đọc chắc chắn giới hạn tốc độ là 70. |
+| `80` | Đọc chắc chắn giới hạn tốc độ là 80. |
+| `90` | Đọc chắc chắn giới hạn tốc độ là 90. |
+| `100` | Đọc chắc chắn giới hạn tốc độ là 100. |
+| `110` | Đọc chắc chắn giới hạn tốc độ là 110. |
+| `120` | Đọc chắc chắn giới hạn tốc độ là 120. |
+
+#### `visibility`
+
+| Giá trị | Chú thích |
+|---|---|
+| `__undefined__` | Chưa đánh giá tình trạng nhìn thấy của biển. |
+| `full` | Toàn bộ biển nằm trong ảnh và không bị vật thể khác che khuất. |
+| `occluded` | Một phần biển bị vật thể khác che khuất. |
+| `truncated` | Một phần biển bị cắt bởi rìa ảnh. |
+| `occluded_and_truncated` | Biển vừa bị vật thể khác che khuất vừa bị cắt bởi rìa ảnh. |
+
+#### `legibility`
+
+| Giá trị | Chú thích |
+|---|---|
+| `__undefined__` | Chưa đánh giá khả năng đọc nội dung biển. |
+| `clear` | Nội dung cần thiết trên biển đọc hoặc nhận biết rõ ràng. |
+| `partly_readable` | Chỉ đọc hoặc nhận biết được một phần nội dung biển. |
+| `unreadable` | Không đọc được nội dung biển với độ tin cậy đủ để phân loại chi tiết. |
+
+#### `decision`
+
+| Giá trị | Chú thích |
+|---|---|
+| `__undefined__` | Chưa đưa ra quyết định cuối cho annotation. |
+| `label` | Annotation đủ rõ và có thể gán nhãn bình thường theo guideline. |
+| `unknown` | Biết chắc là biển nhưng không đủ chứng cứ để phân loại sâu hơn; `unknown` được chấp nhận là kết quả cuối. |
+| `escalate` | Trường hợp cần QA/reviewer kiểm tra hoặc đưa ra quyết định. |
+
+#### `review_reason`
+
+| Giá trị | Chú thích |
+|---|---|
+| `__undefined__` | Chưa xác định lý do review. |
+| `none` | Không có vấn đề cần QA/reviewer kiểm tra. |
+| `small_or_far` | Biển quá nhỏ hoặc quá xa để xác định đáng tin cậy. |
+| `occluded` | Biển bị vật thể khác che khuất gây khó khăn cho annotation. |
+| `truncated` | Biển bị cắt bởi rìa ảnh gây khó khăn cho annotation. |
+| `glare_or_blur` | Biển khó đọc do lóa, phản chiếu, nhòe, mất nét hoặc chất lượng ảnh thấp. |
+| `sign_vs_nonsign` | Không chắc đối tượng là biển giao thông hay vật thể không phải biển giao thông. |
+| `hierarchy_conflict` | Không thể tạo tổ hợp `family` → `type` → `value` hợp lệ theo taxonomy hiện tại. |
+| `geometry` | Không chắc cách đặt hoặc ranh giới bounding box của biển. |
+| `other` | Cần review vì nguyên nhân khác ngoài các lý do đã liệt kê. |
