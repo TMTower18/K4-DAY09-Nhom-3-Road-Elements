@@ -1,0 +1,314 @@
+[
+  {
+    "name": "W.224",
+    "color": "#F23C3C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.205c",
+    "color": "#3C71F2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.102",
+    "color": "#A6F23C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "R.302a",
+    "color": "#F23CDB",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.205a",
+    "color": "#3CF2D3",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.207",
+    "color": "#F29E3C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.201a",
+    "color": "#693CF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.123a",
+    "color": "#44F23C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "I.434a",
+    "color": "#F23C79",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "R.303",
+    "color": "#3CAEF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.130",
+    "color": "#E3F23C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "I.409",
+    "color": "#CB3CF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "R.415a",
+    "color": "#3CF296",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.245a",
+    "color": "#F2613C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.106a*Xe tải",
+    "color": "#3C4CF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.203c",
+    "color": "#81F23C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.117*",
+    "color": "#F23CB6",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.124a*",
+    "color": "#3CEBF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.107",
+    "color": "#F2C33C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.124d",
+    "color": "#8E3CF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.103a",
+    "color": "#3CF259",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.203b",
+    "color": "#F23C54",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.221b",
+    "color": "#3C89F2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.111",
+    "color": "#BEF23C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.129",
+    "color": "#F03CF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "S.505a*Xe máy",
+    "color": "#3CF2BB",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.246a",
+    "color": "#F2863C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.225",
+    "color": "#513CF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "S.505a*Xe tải và công",
+    "color": "#5CF23C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.104",
+    "color": "#F23C91",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "S.505a*Xe tải",
+    "color": "#3CC6F2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "Camera",
+    "color": "#F2E83C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.123b",
+    "color": "#B33CF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.202b",
+    "color": "#3CF27E",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "B.8a",
+    "color": "#F2493C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.137",
+    "color": "#3C64F2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.139",
+    "color": "#99F23C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.205b",
+    "color": "#F23CCE",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.127*50",
+    "color": "#3CF2E0",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.127*60",
+    "color": "#F2AB3C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.127*80",
+    "color": "#763CF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.127*40",
+    "color": "#3CF241",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "R.301e",
+    "color": "#F23C6C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.239b*",
+    "color": "#3CA1F2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.233",
+    "color": "#D6F23C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "I.407a",
+    "color": "#D83CF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.131a",
+    "color": "#3CF2A3",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.124b1",
+    "color": "#F26E3C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.210",
+    "color": "#3C3FF2",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "P.124c",
+    "color": "#74F23C",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.201b",
+    "color": "#F23CA9",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "W.246c",
+    "color": "#3CDEF2",
+    "type": "rectangle",
+    "attributes": []
+  }
+]
