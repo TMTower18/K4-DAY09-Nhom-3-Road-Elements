@@ -76,20 +76,55 @@ Dùng một CVAT label hình chữ nhật tên `traffic_sign`; phân cấp nhãn
 | EX-06 | ![EX-06](../../images/bien_xa.png) | biển ở xa thấy biển những không thấy rõ nội dung | 1 box; để tất cả thuộc tính là unknow hoặc tương tự | §1, §5 |
 | EX-07 | ![EX-07](../../images/bien_vien.png) | biển bị cắt ở viền, không thấy hơn 80% biển | ignore, không tạo box | §1, §5 |
 
+ 
+## 10. Common mistakes
 
-## 10. Common mistakes + checklist
+- Đoán số tốc độ từ một chữ số hoặc biển trên khung đường: chuyển "value=unreadable".
+- Đánh đồng hình dáng với ý nghĩa: chỉ gán family/type khi nội dung đủ bằng chứng; màu/shape chỉ giúp phát hiện ứng viên.
+- Box trùm cả cột/phần bị che: chỉnh về mặt biển nhìn thấy; không vẽ amodal.
+- Gộp hai biển hoặc cắt một biển thành nhiều box: đếm từng mặt vật lý theo §2.
+- Quên biển nhỏ: zoom, áp dụng ngưỡng ở ảnh gốc; nếu cạnh dài nhất dưới 10 px thì IGNORE.
+- Lạm dụng "other_*" thay cho "unknown": "other_*" đòi chứng cứ class con khác thực sự, không phải do không đọc nổi.
+- Để default "__undefined__": duyệt và sửa tất cả attributes trước Save/Export. Không để thuộc tính nào còn "__undefined__"; nghi vấn cần QA phải được ghi vào calibration/review log kèm "sample_id".
+- Trộn ảnh blind vào ví dụ: chỉ dùng "example/calibration"; giữ gold blind kín cho tới freeze.
 
-- **Đoán số** tốc độ từ một chữ số hoặc biển trên khung đường: chuyển `value=unreadable`.
-- **Đánh đồng hình dáng với ý nghĩa:** chỉ gán family/type khi nội dung đủ bằng chứng; màu/shape chỉ giúp phát hiện ứng viên.
-- **Box trùm cả cột/phần bị che:** chỉnh về mặt biển nhìn thấy; không vẽ amodal.
-- **Gộp hai biển hoặc cắt một biển thành nhiều box:** đếm từng mặt vật lý theo §2.
-- **Quên biển nhỏ:** zoom, áp dụng ngưỡng ở ảnh gốc; nếu cạnh dài nhất dưới 10 px thì IGNORE.
-- **Lạm dụng `other_*` thay cho `unknown`:** `other_*` đòi chứng cứ class con khác thực sự, không phải do không đọc nổi.
-- **Để default `__undefined__`:** duyệt và sửa tất cả attributes trước Save/Export. Không để thuộc tính nào còn `__undefined__`; nghi vấn cần QA phải được ghi vào calibration/review log kèm `sample_id`.
-- **Trộn ảnh blind vào ví dụ:** chỉ dùng `example/calibration`; giữ gold blind kín cho tới freeze.
+---
 
-**Thao tác giao nhận:** tạo task ảnh với schema đồng bộ; dán nguyên file này vào Guide; mỗi annotator label độc lập rồi Ctrl+S, export `CVAT for images 1.1` (không kèm ảnh) để QA so; sau calibration thay ví dụ bằng `sample_id` thật, cập nhật v2 và revision log. CVAT native XML lưu box, attributes và tag; QA vẫn cần xem ảnh để kiểm các quyết định IGNORE và geometry.
+## 11. Review checklist
 
+Trước khi Save / Export / Submit, annotator hoặc reviewer kiểm tra:
+
+- [ ] Đủ object: Không bỏ sót biển giao thông hợp lệ trong ảnh.
+- [ ] Đúng số lượng: Mỗi mặt biển vật lý được annotate thành một object riêng theo §2.
+- [ ] Không gộp biển: Hai mặt biển khác nhau không nằm chung trong một bounding box.
+- [ ] Không tách biển: Một mặt biển không bị chia thành nhiều bounding box.
+- [ ] Box đúng geometry: Box bám sát phần mặt biển thực sự nhìn thấy.
+- [ ] Không vẽ amodal: Box không mở rộng sang phần biển bị che khuất hoặc suy đoán.
+- [ ] Không lấy cột biển: Box không bao gồm cột, giá đỡ hoặc vùng nền không cần thiết.
+- [ ] Kiểm tra biển nhỏ: Đã zoom và kiểm tra kích thước trên ảnh gốc.
+- [ ] Áp dụng ngưỡng 10 px: Biển có cạnh dài nhất dưới 10 px đã được IGNORE.
+- [ ] Đúng family/type: Chỉ gán khi nội dung có đủ bằng chứng; không suy luận chỉ từ màu hoặc shape.
+- [ ] Không đoán "value": Nếu không đọc đủ nội dung thì sử dụng "value=unreadable".
+- [ ] Kiểm tra "other_*": Chỉ dùng khi có bằng chứng đây là class con khác thực sự.
+- [ ] Phân biệt "unknown": Dùng "unknown" khi không đủ bằng chứng để xác định class phù hợp.
+- [ ] Không còn "__undefined__": Tất cả attributes đã được duyệt và gán giá trị hợp lệ.
+- [ ] Case nghi vấn đã ghi log: Trường hợp cần QA đã được ghi vào calibration/review log kèm "sample_id".
+- [ ] Không lộ gold blind: Chỉ dùng "example/calibration" trong ví dụ; gold blind vẫn được giữ kín.
+- [ ] Đã kiểm tra lần cuối: Rà lại toàn bộ annotation trước khi Ctrl+S và Export.
+
+Thao tác giao nhận
+
+- [ ] Task ảnh được tạo với schema đã đồng bộ.
+- [ ] Guideline hiện tại đã được dán đầy đủ vào Guide.
+- [ ] Mỗi annotator thực hiện label độc lập.
+- [ ] Đã Ctrl+S trước khi export.
+- [ ] Export đúng định dạng "CVAT for images 1.1".
+- [ ] Export không kèm ảnh để QA so sánh.
+- [ ] Sau calibration, ví dụ đã được thay bằng "sample_id" thật.
+- [ ] Guideline đã được cập nhật lên v2.
+- [ ] Các thay đổi đã được ghi vào revision log.
+
+«Lưu ý QA: CVAT native XML lưu box, attributes và tag; reviewer vẫn cần xem ảnh gốc để kiểm các quyết định IGNORE và chất lượng geometry.»
 ## Nguồn tham khảo và phần nhóm tự quy định
 
 - Ertler et al., *The Mapillary Traffic Sign Dataset for Detection and Classification on a Global Scale*, ECCV 2020 — detection/classification ảnh đường phố đa quốc gia: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123680069.pdf
